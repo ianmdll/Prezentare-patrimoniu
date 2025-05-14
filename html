@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prezentare Tip PowerPoint</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="presentation-container">
+        <div id="slide1" class="slide active">
+            <h2>Slide 1</h2>
+            <p>Acesta este primul slide al prezentării tale.</p>
+        </div>
+        <div id="slide2" class="slide">
+            <h2>Slide 2</h2>
+            <p>Al doilea slide al prezentării tale.</p>
+        </div>
+        <div id="slide3" class="slide">
+            <h2>Slide 3</h2>
+            <p>Al treilea slide al prezentării tale.</p>
+        </div>
+        <div class="controls">
+            <button id="prev" onclick="changeSlide(-1)">Anterior</button>
+            <button id="next" onclick="changeSlide(1)">Următor</button>
+        </div>
+        <button id="startButton" onclick="startPresentation()">Start Prezentare</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
